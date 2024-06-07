@@ -1,0 +1,132 @@
+body{
+    background-color: #f1f5f9;
+}
+
+.main{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 65ch; 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.page-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-title h1{
+    color: #64748b;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.input-area input{
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #cbd5e17c;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.input-area input::placeholder{
+    color: #64748b;
+    font-weight: bold;
+}
+
+.input-area button{
+    font-weight: bold;
+    font-size: 0.8rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition-duration: 300ms;
+    width: 100%;
+}
+
+.input-area button:hover{
+    opacity: 60%;  
+}
+
+.input-area button:disabled{
+    opacity: 40%;
+    cursor: not-allowed;
+}
+
+.input-area button:disabled:hover{
+    opacity: 40%;
+}
+
+.search-area{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#data-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem
+}
+
+#data-container .product-item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    text-align: start;
+}
+
+
+#data-container .product-image{
+    border: 1px solid black;
+    padding: 2rem;
+    width: 15rem;
+    border-radius: 1rem;
+}
+
+#data-container .product-name{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#data-container .product-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-details span:nth-child(1) {
+    color: #007bff;
+}
+
+.product-details span:nth-child(2) {
+    color: #f97316;
+}
